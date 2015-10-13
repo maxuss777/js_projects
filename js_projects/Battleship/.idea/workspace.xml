@@ -24,13 +24,15 @@
       <file leaf-file-name="battleship.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/battleship.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3880435">
-              <caret line="139" column="1" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.49756098">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
               <folding>
                 <element signature="n#!!block;n#init#0" expanded="false" />
                 <element signature="e#262#705#0" expanded="false" />
-                <element signature="e#720#1903#0" expanded="false" />
-                <element signature="e#1923#2323#0" expanded="false" />
+                <element signature="e#1026#1679#0" expanded="false" />
+                <element signature="e#1712#1901#0" expanded="false" />
+                <element signature="e#1936#2718#0" expanded="false" />
+                <element signature="e#3116#3516#0" expanded="false" />
                 <element signature="n#!!block;n#parseGuess#0" expanded="false" />
                 <element signature="n#!!block;n#handleFireButton#0" expanded="false" />
                 <element signature="n#!!block;n#handleKeyPress#0" expanded="false" />
@@ -42,9 +44,17 @@
       <file leaf-file-name="HTML Test Page.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML Test Page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="8.846154">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="e#121#169#0" expanded="false" />
+                <element signature="e#187#370#0" expanded="false" />
+                <element signature="e#394#517#0" expanded="false" />
+                <element signature="e#531#655#0" expanded="false" />
+                <element signature="e#666#728#0" expanded="false" />
+                <element signature="e#741#906#0" expanded="false" />
+                <element signature="e#925#1054#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +68,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -77,9 +90,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="927" />
-    <option name="width" value="997" />
-    <option name="height" value="1057" />
+    <option name="x" value="469" />
+    <option name="width" value="904" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -103,7 +116,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -160,8 +173,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -172,6 +185,8 @@
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="JavaScript Debug.HTML Test Page.html">
     <configuration default="false" name="HTML Test Page.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/untitled/HTML Test Page.html">
@@ -249,12 +264,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="927" y="0" width="997" height="1057" extended-state="1" />
+    <frame x="469" y="0" width="904" height="745" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19367991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21283785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.50383353" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.50383353" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -284,14 +299,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/battleship.js</url>
-          <line>30</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -303,8 +311,10 @@
           <folding>
             <element signature="n#!!block;n#init#0" expanded="false" />
             <element signature="e#262#705#0" expanded="false" />
-            <element signature="e#720#1903#0" expanded="false" />
-            <element signature="e#1923#2323#0" expanded="false" />
+            <element signature="e#1026#1679#0" expanded="false" />
+            <element signature="e#1712#1901#0" expanded="false" />
+            <element signature="e#1936#2718#0" expanded="false" />
+            <element signature="e#3116#3516#0" expanded="false" />
             <element signature="n#!!block;n#parseGuess#0" expanded="false" />
             <element signature="n#!!block;n#handleFireButton#0" expanded="false" />
             <element signature="n#!!block;n#handleKeyPress#0" expanded="false" />
@@ -316,7 +326,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="e#121#169#0" expanded="false" />
+            <element signature="e#187#370#0" expanded="false" />
+            <element signature="e#394#517#0" expanded="false" />
+            <element signature="e#531#655#0" expanded="false" />
+            <element signature="e#666#728#0" expanded="false" />
+            <element signature="e#741#906#0" expanded="false" />
+            <element signature="e#925#1054#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battleship.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#init#0" expanded="false" />
+            <element signature="e#262#705#0" expanded="false" />
+            <element signature="e#1026#1679#0" expanded="false" />
+            <element signature="e#1712#1901#0" expanded="false" />
+            <element signature="e#1936#2718#0" expanded="false" />
+            <element signature="e#3116#3516#0" expanded="false" />
+            <element signature="n#!!block;n#parseGuess#0" expanded="false" />
+            <element signature="n#!!block;n#handleFireButton#0" expanded="false" />
+            <element signature="n#!!block;n#handleKeyPress#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -324,19 +360,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="e#121#169#0" expanded="false" />
+            <element signature="e#187#370#0" expanded="false" />
+            <element signature="e#394#517#0" expanded="false" />
+            <element signature="e#531#655#0" expanded="false" />
+            <element signature="e#666#728#0" expanded="false" />
+            <element signature="e#741#906#0" expanded="false" />
+            <element signature="e#925#1054#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML Test Page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.846154">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#121#169#0" expanded="false" />
+            <element signature="e#187#370#0" expanded="false" />
+            <element signature="e#394#517#0" expanded="false" />
+            <element signature="e#531#655#0" expanded="false" />
+            <element signature="e#666#728#0" expanded="false" />
+            <element signature="e#741#906#0" expanded="false" />
+            <element signature="e#925#1054#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5382113">
+          <caret line="553" column="20" selection-start-line="553" selection-start-column="20" selection-end-line="553" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/battleship.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3880435">
-          <caret line="139" column="1" selection-start-line="139" selection-start-column="1" selection-end-line="139" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.49756098">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
           <folding>
             <element signature="n#!!block;n#init#0" expanded="false" />
             <element signature="e#262#705#0" expanded="false" />
-            <element signature="e#720#1903#0" expanded="false" />
-            <element signature="e#1923#2323#0" expanded="false" />
+            <element signature="e#1026#1679#0" expanded="false" />
+            <element signature="e#1712#1901#0" expanded="false" />
+            <element signature="e#1936#2718#0" expanded="false" />
+            <element signature="e#3116#3516#0" expanded="false" />
             <element signature="n#!!block;n#parseGuess#0" expanded="false" />
             <element signature="n#!!block;n#handleFireButton#0" expanded="false" />
             <element signature="n#!!block;n#handleKeyPress#0" expanded="false" />

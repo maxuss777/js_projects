@@ -70,6 +70,51 @@ var model =
             }
         }
         return true;
+    },
+    generateShip: function()
+    {
+        var direction = Math.floor(Math.random()*2);
+        var row,col;
+
+        if(direction===1)
+        {
+            row = Math.floor(Math.random()*this.boardSize);
+            col = Math.floor(Math.random()*(this.boardSize-this.shipsLength));
+        }
+        else
+        {
+            row = Math.floor(Math.random()*(this.boardSize-this.shipsLength));
+            col = Math.floor(Math.random()*this.boardSize);
+        }
+        var newShipLocation = [];
+        for(var i=0; i<this.shipsLength; i++)
+        {
+            if(direction===1)
+            {
+                newShipLocation.push(row+""+(col+i));
+            }
+            else
+            {
+                newShipLocation.push((row+i)+""+col);
+            }
+        }
+        return newShipLocation;
+    },
+    collision: function(location)
+    {
+        for(var i=0; i<this.numShips; i++)
+        {
+            var ship = model.ships[i];
+
+            for(var j=0; j<location.length; i++)
+            {
+                if(ship.location.indexOf(location[j])>=0)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 };
 
