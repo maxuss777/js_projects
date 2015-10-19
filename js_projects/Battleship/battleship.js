@@ -180,4 +180,3 @@ function handleKeyPress(e)
         return false;
     }
 }
-
