@@ -1,5 +1,22 @@
 window.onload = init;
 
+function handleFireButton()
+{
+    var guessInput = document.getElementById("guessInput");
+    var guess = guessInput.value.replace(/ /g, "");
+    controller.processGuess(guess);
+    guessInput.value = "";
+}
+
+function handleKeyPress(e)
+{
+    var fireButton = document.getElementById("fireButton");
+    if (e.keyCode===13){
+        fireButton.click();
+        return false;
+    }
+}
+
 var view =
 {
     displayMessage: function (msg)
@@ -155,17 +172,25 @@ function init()
     guessInput.onkeypress = handleKeyPress;
 
     model.generateShipLocations();
+
+    //displayGeneratedShips();
+
+}
+
+function displayGeneratedShips()
+{
+    for(var i=0; i<model.numShips; i++)
+    {
+        for(var j=0; j<model.ships[i].locations.length; j++)
+        {
+            view.displayHit(model.ships[i].locations[j]);
+        }
+    }
 }
 
 function parseGuess(guess)
 {
     var alphabet = [ "A", "B", "C", "D", "E", "F", "G" ];
-
-    /*if (guess===null || guess.length!==2)
-    {
-        alert("Oops, please enter a letter and a number on the board.");
-    }*/
-   // guess.replace(/\s/g, "");
 
     if(!guess)
     {
@@ -196,19 +221,4 @@ function parseGuess(guess)
     return null;
 }
 
-function handleFireButton()
-{
-    var guessInput = document.getElementById("guessInput");
-    var guess = guessInput.value.replace(/ /g, "");
-    controller.processGuess(guess);
-    guessInput.value = "";
-}
 
-function handleKeyPress(e)
-{
-    var fireButton = document.getElementById("fireButton");
-    if (e.keyCode===13){
-        fireButton.click();
-        return false;
-    }
-}
