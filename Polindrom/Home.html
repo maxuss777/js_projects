@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        String.prototype.polindrom=function()
+        {
+            var inverted = this;
+            var j = 0;
+
+            for (var i = this.length - 1; i >= 0; i--)
+            {
+                if (inverted[j] !== this[i])
+                {
+                    return false
+                }
+                j++;
+            }
+            return true;
+        };
+
+        var testWord = "ollo";
+
+        console.log(testWord.polindrom());
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

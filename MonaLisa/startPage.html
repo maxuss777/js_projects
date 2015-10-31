@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <script>
+        window.onload = init;
+
+        function init()
+        {
+            var img = document.getElementById("zero");
+            //img.onmouseover = showResult;
+            img.onclick = showResult;
+            img.onmouseout = hideResult;
+        }
+        function showResult()
+        {
+            var image = document.getElementById("zero");
+            image.src = "resources/zero.jpg";
+        }
+
+        function hideResult()
+        {
+            var image = document.getElementById("zero");
+            image.src = "resources/zeroblur.jpg";
+        }
+    </script>
+</head>
+<body>
+<img id="zero" src="resources/zeroblur.jpg">
+</body>
+</html>
