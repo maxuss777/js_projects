@@ -1,6 +1,4 @@
-window.onload= getMyLocation;
-
-function getMyLocation()
+window.onload= function()
 {
     if(navigator.geolocation)
     {
@@ -10,14 +8,27 @@ function getMyLocation()
     {
         alert("Oops, geolocation is not supported");
     }
-}
+};
+
 function displayLocation(position)
 {
+    var ourCoords=
+    {
+        latitude:47.624851,
+        longitude: -122.52099
+    };
+
     var latitude=position.coords.latitude;
     var longitude=position.coords.longitude;
 
     var div=document.getElementById("location");
     div.innerHTML="You are at Latitude: "+latitude+", Longitude: "+longitude;
+
+    var km=Math.floor(computeDistance(position.coords,ourCoords));
+    var distance=document.getElementById("distance");
+    distance.innerHTML="You are "+km+" km from you point!";
+
+    showMap(position.coords);
 }
 
 function displayError(error)
@@ -36,4 +47,23 @@ function displayError(error)
     }
     var div=document.getElementById("location");
     div.innerHTML=errorMessage;
+}
+function computeDistance(startCoords, destCoords)
+{
+    var startLatRads = degreesToRadians(startCoords.latitude);
+    var startLongRads = degreesToRadians(startCoords.longitude);
+    var destLatRads = degreesToRadians(destCoords.latitude);
+    var destLongRads = degreesToRadians(destCoords.longitude);
+
+    var Radius = 6371;
+    var distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
+            Math.cos(startLatRads) * Math.cos(destLatRads) *
+            Math.cos(startLongRads - destLongRads)) * Radius;
+
+    function degreesToRadians(degrees)
+    {
+        return radians = (degrees * Math.PI) / 180;
+    }
+
+    return distance;
 }
