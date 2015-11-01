@@ -30,7 +30,6 @@ function displayLocation(position)
 
     showMap(position.coords);
 }
-
 function displayError(error)
 {
     var errorTypes=
@@ -56,14 +55,12 @@ function computeDistance(startCoords, destCoords)
     var destLongRads = degreesToRadians(destCoords.longitude);
 
     var Radius = 6371;
-    var distance = Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
-            Math.cos(startLatRads) * Math.cos(destLatRads) *
-            Math.cos(startLongRads - destLongRads)) * Radius;
-
     function degreesToRadians(degrees)
     {
         return radians = (degrees * Math.PI) / 180;
     }
 
-    return distance;
+    return Math.acos(Math.sin(startLatRads) * Math.sin(destLatRads) +
+        Math.cos(startLatRads) * Math.cos(destLatRads) *
+        Math.cos(startLongRads - destLongRads)) * Radius;
 }
