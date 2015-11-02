@@ -1,3 +1,4 @@
+var map=null;
 //----------------------------------------------
 function showMap(coords)
 {
@@ -10,10 +11,11 @@ function showMap(coords)
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var mapDiv = document.getElementById("map");
-    var map = new google.maps.Map(mapDiv, mapOptions);
+    map = new google.maps.Map(mapDiv, mapOptions);
 
     var title = "Your Location";
     var content = "You are here: " + coords.latitude + ", " + coords.longitude;
+
     addMarker(map, googleLatAndLong, title, content);
 }
 //----------------------------------------------

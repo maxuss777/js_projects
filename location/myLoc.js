@@ -1,15 +1,35 @@
+var watchId=null;
+//----------------------------------------------
 window.onload= function()
 {
-    if(navigator.geolocation)
+    if (navigator.geolocation)
     {
-        navigator.geolocation.getCurrentPosition(displayLocation, displayError);
+        var watchButton = document.getElementById("watch");
+        watchButton.onclick = watchLocation;
+
+        var clearWatchButton = document.getElementById("clearWatch");
+        clearWatchButton.onlick = clearWatch;
     }
     else
     {
         alert("Oops, geolocation is not supported");
     }
 };
-
+//----------------------------------------------
+function watchLocation()
+{
+    watchId = navigator.geolocation.watchPosition(displayLocation,displayError);
+}
+//----------------------------------------------
+function clearWatch()
+{
+    if (watchId)
+    {
+        navigator.geolocation.clearWatch(watchId);
+        watchId = null;
+    }
+}
+//----------------------------------------------
 function displayLocation(position)
 {
     var ourCoords=
@@ -23,13 +43,18 @@ function displayLocation(position)
 
     var div=document.getElementById("location");
     div.innerHTML="You are at Latitude: "+latitude+", Longitude: "+longitude;
+    div.innerHTML+=" with "+position.coords.accuracy+" meters accuracy";
 
     var km=Math.floor(computeDistance(position.coords,ourCoords));
     var distance=document.getElementById("distance");
     distance.innerHTML="You are "+km+" km from you point!";
 
-    showMap(position.coords);
+    if(map === null)
+    {
+        showMap(position.coords);
+    }
 }
+//----------------------------------------------
 function displayError(error)
 {
     var errorTypes=
@@ -47,6 +72,7 @@ function displayError(error)
     var div=document.getElementById("location");
     div.innerHTML=errorMessage;
 }
+//----------------------------------------------
 function computeDistance(startCoords, destCoords)
 {
     var startLatRads = degreesToRadians(startCoords.latitude);
@@ -64,3 +90,4 @@ function computeDistance(startCoords, destCoords)
         Math.cos(startLatRads) * Math.cos(destLatRads) *
         Math.cos(startLongRads - destLongRads)) * Radius;
 }
+//----------------------------------------------
