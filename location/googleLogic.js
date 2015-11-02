@@ -1,4 +1,4 @@
-var map=null;
+var map = null;
 //----------------------------------------------
 function showMap(coords)
 {
@@ -21,24 +21,24 @@ function showMap(coords)
 //----------------------------------------------
 function addMarker(map, latlong, title, content)
 {
-    var markerOptions=
+    var markerOptions =
     {
-        position: latlong,
-        map: map,
-        title: title,
+        position:  latlong,
+        map:       map,
+        title:     title,
         clickable: true
     };
-    var marker=new google.maps.Marker(markerOptions);
-    var infoWindowOptions=
+    var marker = new google.maps.Marker(markerOptions);
+    var infoWindowOptions =
     {
-        content:content,
+        content:  content,
         position: latlong
     };
-    var infoWindow=new google.maps.InfoWindow(infoWindowOptions);
+    var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
 
-    google.maps.event.addListener(marker, "click", function()
-        {
-            infoWindow.open(map);
-        })
+    google.maps.event.addListener(marker, "click", function ()
+    {
+        infoWindow.open(map);
+    })
 }
 //----------------------------------------------

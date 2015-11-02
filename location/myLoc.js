@@ -1,4 +1,4 @@
-var watchId=null;
+var watchId = null;
 //----------------------------------------------
 window.onload= function()
 {
@@ -18,7 +18,7 @@ window.onload= function()
 //----------------------------------------------
 function watchLocation()
 {
-    watchId = navigator.geolocation.watchPosition(displayLocation,displayError);
+    watchId = navigator.geolocation.watchPosition(displayLocation, displayError);
 }
 //----------------------------------------------
 function clearWatch()
@@ -32,24 +32,24 @@ function clearWatch()
 //----------------------------------------------
 function displayLocation(position)
 {
-    var ourCoords=
+    var ourCoords =
     {
-        latitude:47.624851,
+        latitude:  47.624851,
         longitude: -122.52099
     };
 
-    var latitude=position.coords.latitude;
-    var longitude=position.coords.longitude;
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
 
-    var div=document.getElementById("location");
-    div.innerHTML="You are at Latitude: "+latitude+", Longitude: "+longitude;
-    div.innerHTML+=" with "+position.coords.accuracy+" meters accuracy";
+    var div = document.getElementById("location");
+    div.innerHTML = "You are at Latitude: " + latitude + ", Longitude: " + longitude;
+    div.innerHTML += " (with " + position.coords.accuracy + " meters accuracy)";
 
-    var km=Math.floor(computeDistance(position.coords,ourCoords));
-    var distance=document.getElementById("distance");
-    distance.innerHTML="You are "+km+" km from you point!";
+    var km = Math.floor(computeDistance(position.coords, ourCoords));
+    var distance = document.getElementById("distance");
+    distance.innerHTML = "You are " + km + " km from you point!";
 
-    if(map === null)
+    if (map===null)
     {
         showMap(position.coords);
     }
