@@ -1,17 +1,20 @@
-var webdriver = require("selenium-webdriver");
+var webdriver = require('selenium-webdriver'),
+    By = require('selenium-webdriver').By,
+    until = require('selenium-webdriver').until;
 
-function createDriver() {
-    var driver = new webdriver.Builder()
-        .usingServer('http://localhost:4444/wd/hub')
-        .withCapabilities(webdriver.Capabilities.chrome())
-        .build();
-    driver.manage().timeouts().setScriptTimeout(10000);
-    return driver;
-}
+var driver = new webdriver.Builder()
+    .forBrowser('chrome')
+    .build();
 
-var driver = createDriver();
-driver.get("http://www.google.com");
+driver.get('http://www.google.com/');
+driver.findElement(By.name('q')).sendKeys('webdriver');
+driver.findElement(By.name('btnG')).click();
 
-driver.getTitle().then(function (title) {console.log(title);});
+var assert = require('assert');
+
+driver.getTitle().then(function (title)
+{
+    assert.equal(title, "Google");
+} );
 
 driver.quit();
